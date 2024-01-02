@@ -82,7 +82,7 @@ main {
     border-radius: 5px;
 }
 
-.form input:hover, .form textarea:hover {
+.form input:hover, .form textarea:hover, button.submit-btn:hover {
     border: 1px solid #FFFFFF;
 }
 
