@@ -1,0 +1,121 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: unset;
+    color: #FFFFFF;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 1px;
+    background: #000000;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.6;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 4%;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.side-left, .side-right {
+    display: flex;
+    flex: 1 1 48%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta {
+    max-width: min-content;
+    min-width: 70%;
+}
+
+.cta-text {
+    color: rgba(192, 192, 192, 1);
+}
+
+.cta .media-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+
+.cta .media-links img {
+    width: 25px;
+    height: 25px;
+}
+
+.form {
+    max-width: min-content;
+    min-width: 70%;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(22, 22, 22, 1);
+    border-radius: 15px;
+}
+
+.form h2 {
+    margin: unset;
+}
+
+.form input, .form textarea, button.submit-btn {
+    padding: 10px;
+    min-height: 1.5rem;
+    background: rgba(30, 30, 32, 1);
+    color: rgba(111, 111, 113, 1);
+    border: 1px solid rgba(30, 30, 32, 1);
+    border-radius: 5px;
+}
+
+.form input:hover, .form textarea:hover {
+    border: 1px solid #FFFFFF;
+}
+
+.form input::placeholder, .form textarea::placeholder {
+    font-family: "Roboto", sans-serif;
+    color: rgba(111, 111, 113, 1);
+}
+
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button.submit-btn {
+    margin-top: 15px;
+    color: #FFFFFF;
+    background: rgb(24, 86, 47);
+}
+
+.double-input-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+    .double-input-row {
+        flex-wrap: nowrap;
+    }
+}
+
+.double-input-row > * {
+    flex: 1 1 100%;
+}
