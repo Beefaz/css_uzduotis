@@ -25,7 +25,6 @@ main {
     display: flex;
     gap: 4%;
     flex-wrap: wrap;
-    overflow: scroll;
 }
 
 .side-left, .side-right {
